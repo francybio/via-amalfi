@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Via Amalfi · Restaurante italiano en Lloret de Mar</title>
+<meta name="description" content="Via Amalfi, cocina napolitana y mediterránea en Lloret de Mar: pasta casera, cacio e pepe en la rueda de parmesano, carbonara con trufa, pulpo a la brasa y tomahawk. Reservas: 601 90 74 84.">
+<meta name="theme-color" content="#10231A">
+<meta property="og:title" content="Via Amalfi · Un pedacito de Italia en Lloret de Mar">
+<meta property="og:description" content="Pasta casera, cocina del sur de Italia y terraza en Lloret de Mar.">
+<meta property="og:image" content="assets/img/cacio-rueda.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310231A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23FFD38A' text-anchor='middle'%3EVA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ INTRO · el neón VA se enciende ============ -->
+<div class="neon" id="neon" aria-hidden="true">
+  <div class="neon__wall"></div>
+  <p class="neon__sign"><span class="neon__v">V</span><span class="neon__a">A</span></p>
+  <p class="neon__name">Via Amalfi</p>
+  <p class="neon__sub">Cucina napoletana · Lloret de Mar</p>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Via Amalfi, inicio">Via Amalfi</a>
+  <nav class="nav__links" id="navLinks" aria-label="Principal">
+    <a href="#paste">Le paste</a>
+    <a href="#via">La carta</a>
+    <a href="#galleria">Galleria</a>
+    <a href="#reels">Reels</a>
+    <a href="#prenota">Reservar</a>
+  </nav>
+  <div class="nav__end">
+    <span class="status" data-status><i></i><b>—</b></span>
+    <a class="btn btn--gold btn--sm" href="https://widget.thefork.com/e0b16c86-4472-4dc5-9348-b2a0cf1cdb49" target="_blank" rel="noopener"><span>Reservar mesa</span><i class="ph-light ph-arrow-up-right"></i></a>
+    <button class="nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO · Via [vídeo] Amalfi ============ -->
+  <section class="hero">
+    <p class="hero__kicker"><span>Cucina napoletana</span><span>Lloret de Mar</span><span>Mayo — Octubre</span></p>
+    <h1 class="hero__title" aria-label="Via Amalfi">
+      <span class="hero__w hero__w--l" aria-hidden="true">Via</span>
+      <span class="hero__frame">
+        <video class="hero__video" data-auto data-src="assets/video/asi-es.mp4" poster="assets/img/poster-asi-es.jpg" muted loop playsinline preload="none" aria-label="Bruschetta, cacio e pepe en la rueda de parmesano y un spritz en Via Amalfi"></video>
+      </span>
+      <span class="hero__w hero__w--r" aria-hidden="true">Amalfi</span>
+    </h1>
+    <div class="hero__foot">
+      <p class="hero__lead">Un pedacito de Italia en Lloret de Mar. Cocina del sur, pasta hecha en casa y una terraza para alargar la sobremesa.</p>
+      <ul class="scores">
+        <li><b>4,6</b><span>Google<br>1.620 reseñas</span></li>
+        <li><b>9,3</b><span>TheFork<br>522 opiniones</span></li>
+      </ul>
+      <div class="hero__cta">
+        <a class="btn btn--dark" href="#via">Ver la carta</a>
+        <a class="btn btn--line" href="tel:+34601907484"><i class="ph-light ph-phone"></i>601 90 74 84</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MANIFIESTO ============ -->
+  <section class="manifesto" aria-label="Quiénes somos">
+    <p class="numeral">I</p>
+    <p class="manifesto__text" id="manifesto">Un restaurante italiano-mediterráneo basado en la comida tradicional del sur de Italia, que innova con combinaciones de sabores que jamás has probado. Como nuestras abuelas, preparamos la pasta en casa.</p>
+    <div class="manifesto__imgs">
+      <figure><img src="assets/img/cocina.jpg" alt="Cocinera de Via Amalfi revisando una comanda en la cocina" loading="lazy" width="1200" height="1600"></figure>
+      <figure><img src="assets/img/sala-neon.jpg" alt="Sala de Via Amalfi con el neón VA y la pared vegetal" loading="lazy" width="1200" height="1600"></figure>
+    </div>
+  </section>
+
+  <!-- ============ LE TRE PASTE ============ -->
+  <section class="paste" id="paste" aria-labelledby="pasteT">
+    <div class="paste__copy">
+      <p class="numeral">II</p>
+      <p class="label">Le paste classiche</p>
+      <h2 class="h2" id="pasteT">¿Carbonara, amatriciana<br>o <em>cacio e pepe</em>?</h2>
+      <p class="lead">Las tres de nuestro Instagram, de la cocina a la mesa. Elige una y mira cómo sale.</p>
+      <div class="pasta-pick" role="tablist" aria-label="Elegir pasta">
+        <button role="tab" aria-selected="true" data-pasta="0"><span class="pp__n">Carbonara</span><span class="pp__p">18 €</span></button>
+        <button role="tab" aria-selected="false" data-pasta="1"><span class="pp__n">Amatriciana</span><span class="pp__p">17 €</span></button>
+        <button role="tab" aria-selected="false" data-pasta="2"><span class="pp__n">Cacio e pepe</span><span class="pp__p">20 €</span></button>
+      </div>
+      <p class="pasta-desc" id="pastaDesc" aria-live="polite"></p>
+    </div>
+    <div class="paste__media">
+      <figure class="paste__video">
+        <video id="pastaVideo" data-src="assets/video/tres-pastas.mp4" poster="assets/img/poster-tres-pastas.jpg" muted playsinline preload="none" aria-label="Vídeo de las tres pastas: carbonara, amatriciana y cacio e pepe"></video>
+        <span class="paste__bar"><i id="pastaBar"></i></span>
+      </figure>
+      <figure class="paste__wheel">
+        <img src="assets/img/cacio-rueda.jpg" alt="La rueda de parmesano en llamas donde se termina la cacio e pepe, en la mesa" loading="lazy" width="1200" height="1600">
+        <figcaption>La cacio e pepe se termina en la rueda de parmesano, delante de ti.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ LA VIA · la carta como un viaje ============ -->
+  <section class="via" id="via" aria-labelledby="viaT">
+    <div class="via__pin">
+      <div class="via__head">
+        <p class="numeral numeral--light">III</p>
+        <p class="label label--light">La carta · de Positano a Nápoles</p>
+        <h2 class="h2" id="viaT">Un viaje por<br><em>la costa.</em></h2>
+        <p class="via__hint"><i class="ph-light ph-mouse-scroll"></i> Sigue bajando: la Vespa recorre la carta</p>
+      </div>
+      <div class="via__track" id="viaTrack">
+        <svg class="road" id="road" aria-hidden="true" preserveAspectRatio="none">
+          <path class="road__asphalt" id="roadPath"/>
+          <path class="road__line" id="roadLine"/>
+        </svg>
+        <div class="vespa" id="vespa" aria-hidden="true">
+          <svg viewBox="0 0 120 80"><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="62" r="13" fill="#13161C"/><circle cx="24" cy="62" r="5" fill="#E9DFCF"/>
+            <circle cx="96" cy="62" r="13" fill="#13161C"/><circle cx="96" cy="62" r="5" fill="#E9DFCF"/>
+            <path d="M12 56 Q14 34 40 36 L70 38 Q80 39 84 30 L92 14" stroke="#13161C" stroke-width="3"/>
+            <path d="M8 58 Q8 36 34 34 L62 36 Q70 50 84 50 L104 52 Q110 44 104 36 L94 30 Q86 30 84 40 L74 42 Q66 26 56 26 L30 26 Q10 30 8 58 Z" fill="#F3C53B" stroke="#13161C" stroke-width="2"/>
+            <path d="M30 24 L58 24 Q62 18 56 16 L32 16 Q26 18 30 24 Z" fill="#7A2E1F" stroke="#13161C" stroke-width="2"/>
+            <path d="M88 14 L100 10 M92 14 L84 10" stroke="#13161C" stroke-width="3"/>
+            <circle cx="102" cy="22" r="4" fill="#FFF4C7" stroke="#13161C" stroke-width="1.5"/>
+          </g></svg>
+        </div>
+        <ol class="stops" id="stops"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERIA ============ -->
+  <section class="galleria" id="galleria" aria-labelledby="galT">
+    <div class="galleria__head">
+      <div>
+        <p class="numeral">IV</p>
+        <p class="label">Galleria · @viaamalfi_lloret</p>
+        <h2 class="h2" id="galT">Del Instagram<br><em>a la mesa.</em></h2>
+      </div>
+      <div class="gal__ctrl">
+        <span class="gal__count" id="galCount">01 / 12</span>
+        <button class="circle" type="button" id="galPrev" aria-label="Foto anterior"><i class="ph-light ph-arrow-left"></i></button>
+        <button class="circle" type="button" id="galNext" aria-label="Foto siguiente"><i class="ph-light ph-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="gal" id="gal" tabindex="0" aria-label="Galería de fotos. Arrastra o usa las flechas.">
+      <div class="gal__track" id="galTrack"></div>
+    </div>
+    <div class="gal__progress"><i id="galBar"></i></div>
+  </section>
+
+  <!-- ============ REELS ============ -->
+  <section class="reels" id="reels" aria-labelledby="reelsT">
+    <div class="reels__head">
+      <p class="numeral">V</p>
+      <p class="label">Reels</p>
+      <h2 class="h2" id="reelsT">Cocina abierta.</h2>
+    </div>
+    <div class="strip" id="strip">
+      <button class="reel is-open" type="button" data-video="assets/video/lubina.mp4" data-title="Lubina, cremoso de patata y pan rallado a las hierbas">
+        <video data-auto data-src="assets/video/lubina.mp4" poster="assets/img/poster-lubina.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__t"><small>Plato estrella</small>Lubina con cremoso de patata</span>
+      </button>
+      <button class="reel" type="button" data-video="assets/video/temporada.mp4" data-title="¿Final de temporada? Todavía no">
+        <video data-auto data-src="assets/video/temporada.mp4" poster="assets/img/poster-temporada.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__t"><small>Sala</small>A pleno ritmo</span>
+      </button>
+      <button class="reel" type="button" data-video="assets/video/pasta.mp4" data-title="Good day? Pasta. Bad day? Pasta.">
+        <video data-auto data-src="assets/video/pasta.mp4" poster="assets/img/poster-pasta.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__t"><small>Pasta</small>Good day? Pasta</span>
+      </button>
+      <button class="reel" type="button" data-video="assets/video/asi-es.mp4" data-title="Así es Via Amalfi">
+        <video data-auto data-src="assets/video/asi-es.mp4" poster="assets/img/poster-asi-es.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__t"><small>Mesa</small>Así es Via Amalfi</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ RESEÑAS ============ -->
+  <section class="voices" aria-labelledby="voicesT">
+    <p class="numeral">VI</p>
+    <h2 class="sr" id="voicesT">Opiniones</h2>
+    <div class="voices__stage" id="voices" aria-live="polite"></div>
+    <div class="voices__dots" id="voicesDots" role="tablist" aria-label="Opiniones"></div>
+  </section>
+
+  <!-- ============ RESERVAR ============ -->
+  <section class="prenota" id="prenota" aria-labelledby="prenT">
+    <div class="prenota__card">
+      <p class="numeral numeral--light">VII</p>
+      <p class="label label--light">Prenota</p>
+      <h2 class="h2" id="prenT">Te guardamos<br><em>la mesa.</em></h2>
+      <p class="status status--big" data-status><i></i><b>—</b></p>
+      <table class="hours" id="hours"><caption class="sr">Horario</caption></table>
+      <p class="prenota__season">Temporada de mayo a octubre · Para llevar y catering bajo petición.</p>
+      <div class="prenota__cta">
+        <a class="btn btn--gold" href="https://widget.thefork.com/e0b16c86-4472-4dc5-9348-b2a0cf1cdb49" target="_blank" rel="noopener">Reservar online <i class="ph-light ph-arrow-up-right"></i></a>
+        <a class="btn btn--line-light" href="tel:+34601907484"><i class="ph-light ph-phone"></i>601 90 74 84</a>
+      </div>
+      <address>Carrer de Josep Tarradellas, 1-3, local 9<br>17310 Lloret de Mar · Girona</address>
+      <div class="prenota__links">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Via%20Amalfi%2C%20Carrer%20de%20Josep%20Tarradellas%201-3%2C%20Lloret%20de%20Mar" target="_blank" rel="noopener"><i class="ph-light ph-navigation-arrow"></i>Cómo llegar</a>
+        <a href="https://www.instagram.com/viaamalfi_lloret/" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo"></i>@viaamalfi_lloret</a>
+      </div>
+    </div>
+    <div class="prenota__map">
+      <iframe title="Mapa: Via Amalfi en Lloret de Mar" src="https://maps.google.com/maps?q=Via%20Amalfi%2C%20Carrer%20de%20Josep%20Tarradellas%201-3%2C%20Lloret%20de%20Mar&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="tiles" aria-hidden="true"></div>
+  <div class="foot__in">
+    <p class="foot__big">Via Amalfi</p>
+    <div class="foot__row">
+      <span>Cucina napoletana e mediterranea · Lloret de Mar</span>
+      <span>Fotos y vídeos: Instagram @viaamalfi_lloret y Google · Carta según TheFork</span>
+    </div>
+  </div>
+</footer>
+
+<!-- reproductor -->
+<div class="player" id="player" role="dialog" aria-modal="true" aria-label="Vídeo" hidden>
+  <button class="player__close" type="button" aria-label="Cerrar"><i class="ph-light ph-x"></i></button>
+  <video controls playsinline></video>
+  <p class="player__t"></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
